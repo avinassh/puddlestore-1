@@ -1,0 +1,18 @@
+TESTS:
+PASS:
+    client interaction test
+    commit index test
+    election result test
+    init test
+    mock test
+    partition test
+    stable store test (may be spotty depending on previous raftlogs state)
+    append entries test
+    election request test
+    stepdown test
+    rpc test (ONLY WHEN RUN ALONE)
+
+
+FAIL:
+    --- FAIL: TestClientInteractions (8.12s)
+        ta_integration_test.go:322: Sending a ClientRequest to the leader should return OK; instead returned REQ_FAILED
